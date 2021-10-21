@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+	<head> 
+		<meta charset="UTF-8">
+<title>Nolan McDowell</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+		
+	
+	<!--tag to check the device size, needed for media queries-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<style>
+				
+		body{
+			
+			margin: 0px;
+			background-color:#42095E;
+		color: white;
+			font-size: 20px;
+			font-family: 'Padauk', sans-serif;
+		}
+		
+				a {
+ 		 color: hotpink;
+		}
+		header{background-color:#000000;
+			/*adding a background image*/
+			background-image: url("images/blueGoku.jpg");
+			/*sets background image to fill available space*/
+			background-size: cover;
+			
+			/*positions image in div*/
+			background-position: center;
+			color:#10032C ;
+			
+			height: 50vh;
+			/*this is a flex box element*/
+			display: flex;
+			/*put this in the center of the container*/
+			align-items: center;	
+			padding:20px;
+
+				
+		
+		}
+		/* background color for the page*/
+		
+		header h1{
+			font-size: 50px;
+			font-family: 'ABeeZee', sans-serif;
+			
+		}
+		.flex-container{
+			display: flex;
+			align-items:stretch;
+			
+		}
+		.flex-container div{background-color:#602BA5;
+			margin: 10px;
+			padding: 10px;
+			
+		}
+		/*set the widith of the divs*/
+		#item1{flex:50%;
+		}
+		#item1 img{
+			width:100%;
+			
+		}
+	
+		
+		#item2{
+			flex:50%;}
+			#item2 img{
+			width:100%;
+		}
+		
+		
+		
+		
+		
+		/**CSS for buttons**/
+		.btn{
+			background-color:#06B78E;
+			border:none;
+			padding:15px 32px 15px 32px;
+			font-size: 28px;
+				width: 100%;
+		}
+		/*hover state*/
+		.btn:hover{
+			background-color: #036D54;
+			color:white;
+			width: 100%;
+		}
+		
+		
+		/***second row*/
+		item3{
+			flex:25%;
+		}
+		#item4{flex:50%;}
+		#item5{flex:25%;}
+		/******footer*/
+		#item6{
+			flex:25%;
+		/*overwrite the inherited style*/
+		background-color: transparent;
+		}
+		#item7{
+			flex:50%;
+			background-color: transparent;
+		}
+		#item8{
+			flex:25%;
+		background-color: transparent;
+		}
+		    /* Responsive layout - makes a one column layout instead of a two-column layout */
+        @media (max-width: 800px) {
+          .flex-container {
+            flex-direction: column;
+          }
+        }
+		
+	
+		
+	
+		
+		
+		footer{
+			background-color:#000000;
+			padding:10px 0px 10px 0px;
+			color: #8135E5;
+			text-align: center;
+		}
+		/********media query to change the style for phones***/
+	
+        /* Responsive layout - makes a one column layout instead of a two-column layout */
+        @media (max-width: 800px) {
+          .flex-container {
+            flex-direction: column;
+			
+          }
+        }
+  
+
+	</style>
+</head>
+
+<body>
+	
+	<header>
+		
+		<h1>Nolan McDowell</h1>
+	</header>
+	<!---------------row 1 ----------->
+	<div class="flex-container">
+		<div id="item1">
+			
+			<p>Nolan McDowell is a first-year bilingual student in the Multimedia Production Program focused on graphic design and is a self-taught artist focused mainly on character design. He enjoys drawing characters and playing video games because he aspires to become a content creator as an artist or as a streamer. </p>
+			 <img src="images/aratakiItto.jpg" alt="sketchExample">
+			
+			
+		</div>
+		
+		<div id="item2">
+			<p>
+				He’s enjoyed drawing for the longest time, inspired by video games when he was younger, broadening from traditional drawing towards digital art on an iPad. He is most inspired by the <a href="https://www.pokemon.com/us/" target="_blank">video games</a> and <a href="https://www.viz.com/dragon-ball" target="_blank">anime</a> which he grew up with.</p>
+			<img src="images/regichamber.jpeg" alt="pokemonart">
+		
+		
+		</div>
+		
+		
+	</div> 
+	
+	
+	
+	<div class="flex-container">
+		
+		<div id="item3">
+		<!--add some buttons-->
+			<p>	<button class="btn" onClick="1">Site Construction</button></p>
+			
+			<p><button class="btn" onClick="2">Basic Interaction</button></p>
+			
+			<p><button class="btn" onClick="3">Object Properties</button></p>
+		</div>
+		
+		<div id="item4">
+		<p>Nolan graduated from Catholic Central Highschool with a French Language Arts Diploma, on top of his regular high school diploma in 2020. He often enjoys listening to soundtracks from either video games or movies and enjoys listening to them while playing games or drawing. He’s been drawing since the third grade, often posting what he draws nowadays <a href="https://twitter.com/GlazeVEVO" target="_blank">on Twitter.</a> </p>
+		</div> 
+		<div id="item5">
+		<p>What really inspires Nolan asides from media is his high school art teacher Mr. Hogan. This teacher inspired Nolan as when he is freely able to work on something, it is when you will find him the happiest.</p></div>
+	</div>
+	
+	
+	<footer>
+	<div class="flex-container">
+		<div id="item6">	
+			</div>
+		<div id="item7">
+		<p>Created by Nolan McDowell</p>
+			<p> &copy;2021</p>
+		</div>
+		<div id="item8"></div>
+		</div>
+	</footer>
+</body>
+</html>
