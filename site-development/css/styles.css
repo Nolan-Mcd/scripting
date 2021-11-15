@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* CSS Document */
+
 
 body{
 	margin: 0; 
@@ -24,11 +24,12 @@ h1{
 	color: #505050;
 }
 .sect{
-	background: #FFFFFF; 
-	margin: 0 auto; 
-	padding: 20px; 
+	background: #692F7A ; 
+	color: white;
+	margin: 10px auto; 
+	padding: 10px; 
 	box-sizing: border-box; 
-	max-width: 960px; 
+	max-width: 100%; 
 	overflow: hidden;
 }
 
@@ -44,25 +45,25 @@ a:link, a:visited{color:#B0A33c; text-decoration: none;}
 a:hover{color:darkblue; text-decoration: underline;}
 a:active{color: blue;}
 
-/*------------------------navBar -------------------*/
+
 
 nav ul{
 	list-style-type:none;
 	margin:10px;
-	padding:0;
+	padding:5px auto;
 	overflow: hidden;
 	background: #692F7A ;
 }
 nav li{float: left;}
 nav li a:link{
-	display:block;/*makes sure the whole link is clickable, not just text*/
-	padding: 14px 16px;
+	display:block; 
+	padding: 14px 16px 10px 10px;
 	color:#D5F9FB;
 }
 nav li a:hover{background: #492055; text-decoration: none; color: #8CF1F6;}
 
 
-/*----------------------------image gallery-----------------*/
+
 .imgBlock{
 	float:left;
 	border:1px solid black;
@@ -86,9 +87,11 @@ nav li a:hover{background: #492055; text-decoration: none; color: #8CF1F6;}
 	width:120px;
 	margin:5px;
 }
+images{
+	max-width:100%;
+}
 
 
-/*---------------------------Tables------------------------*/
 
 #customers {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
