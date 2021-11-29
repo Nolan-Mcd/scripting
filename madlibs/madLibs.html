@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mad Libs</title> 
+
+	<style>
+		body{
+			max-width: 100%;
+			color: white;
+			background-color: black;
+		}
+		div{
+			color: darkorange;
+			
+		}
+		h1{color:darkorange;}
+	
+	
+	
+	</style>
+	
+	
+	
+	
+	
+</head>
+	
+
+<body>
+
+	<h1>Mad Libs!</h1>
+	
+	
+	<form action="javascript:myStory()"> 
+	<p>
+	 <label for="adj">Adjective</label>
+	 <input type="text" id="adj" name="adj">
+	</p>
+	<p>
+	 <label for="adj2">Adjective</label>
+	 <input type="text" id="adj2" name="adj2">
+	</p>
+	<p>
+	 <label for="adj3">Adjective</label>
+	 <input type="text" id="adj3" name="adj3">
+	</p>
+	<p>
+	 <label for="noun">Noun</label>
+	 <input type="text" id="noun" name="noun">
+	</p>
+	<p>
+	 <label for="noun2">Noun</label>
+	 <input type="text" id="noun2" name="noun2">
+	</p>
+	<p>
+	 <label for="game">Game</label>
+	 <input type="text" id="game" name="game">
+	</p>
+	<p>
+	 <label for="verb">Verb ending in "ing"</label>
+	 <input type="text" id="verb" name="verb">
+	</p>
+	<p>
+	 <label for="verb">Verb ending in "ing"</label>
+	 <input type="text" id="verb2" name="verb">
+	</p>
+	<p>
+	 <label for="verb">Verb ending in "ing"</label>
+	 <input type="text" id="verb3" name="verb">
+	</p>
+	<p>
+	 <label for="adj4">Adjective</label>
+	 <input type="text" id="adj4" name="adj4">
+	</p>
+	<p>
+	 <label for="famnoun">Family Member Noun</label>
+	 <input type="text" id="famnoun" name="famnoun">
+	</p>
+	<p>
+	 <label for="career">Career</label>
+	 <input type="text" id="career" name="career">
+	</p>
+	<p>
+	 <label for="famnoun2">Family Member Noun</label>
+	 <input type="text" id="famnoun2" name="famnoun2">
+	</p>
+	<p>
+	 <label for="boast">Something to Boast About</label>
+	 <input type="text" id="boast" name="boast">
+	</p>
+	<p>
+	 <label for="song">Christmas Song</label>
+	 <input type="text" id="song" name="song">
+	</p>
+	<p>
+	 <label for="num">Number</label>
+	 <input type="text" id="num" name="num">
+	</p>
+	<p>
+	 <label for="noun3">Noun</label>
+	 <input type="text" id="noun3" name="noun3">
+	</p>
+	<p>
+	 <label for="adj5">Adjective</label>
+	 <input type="text" id="adj5" name="adj5">
+	</p>
+	<p>
+	 <label for="noun4">Noun</label>
+	 <input type="text" id="noun4" name="noun4">
+	</p>
+	<p>
+	 <label for="body">Body Part</label>
+	 <input type="text" id="body" name="body">
+	</p>
+	<p>
+	 <label for="place">Place</label>
+	 <input type="text" id="place" name="place">
+	</p>
+	<p>
+	 <label for="verb4">Verb ending in "ing"</label>
+	 <input type="text" id="verb4" name="verb4">
+	</p>
+	<p>
+	 <label for="adj6">Adjective</label>
+	 <input type="text" id="adj6" name="adj6">
+	</p>
+	<p>
+	 <label for="num2">Number</label>
+	 <input type="text" id="num2" name="num2">
+	</p>
+	<p>
+	 <label for="adj7">Adjective</label>
+	 <input type="text" id="adj7" name="adj7">
+	</p>
+	<p>
+	 <label for="adj8">Adjective</label>
+	 <input type="text" id="adj8" name="adj8">
+	</p>
+	<p>
+	 <label for="plunoun">Plural Noun</label>
+	 <input type="text" id="plunoun" name="plunoun">
+	</p>
+	<p>
+	 <label for="adj9">Adjective</label>
+	 <input type="text" id="adj9" name="adj9">
+	</p>
+	<p>
+	 <label for="adj10">Adjective</label>
+	 <input type="text" id="adj10" name="adj10">
+	</p>
+	<p>
+	 <label for="pc">Place of Occupation</label>
+	 <input type="text" id="pc" name="pc">
+	</p>
+	<p>
+	 <label for="num3">Number</label>
+	 <input type="text" id="num3" name="num3">
+	</p>
+	
+	
+	
+	
+	
+	
+	
+
+	
+	<p><input type="submit" value="Generate Story" onClick="output"></p>
+
+	</form>
+	
+	<div id="output"></div>
+	
+	<script>
+	
+		function myStory(){
+			console.log("one hundred");
+			
+			var ad1=document.getElementById('adj').value;
+			var ad2=document.getElementById('adj2').value;
+			var ad3=document.getElementById('adj3').value;
+			var ad4=document.getElementById('adj4').value;
+			var ad5=document.getElementById('adj5').value;
+			var ad6=document.getElementById('adj6').value;
+			var ad7=document.getElementById('adj7').value;
+			var ad8=document.getElementById('adj8').value;
+			var ad9=document.getElementById('adj9').value;
+			var ad10=document.getElementById('adj10').value;
+			var nou1=document.getElementById('noun').value;
+			var nou2=document.getElementById('noun2').value;
+			var nou3=document.getElementById('noun3').value;
+			var nou4=document.getElementById('noun4').value;
+			var gam=document.getElementById('game').value;
+			var ver1=document.getElementById('verb').value;
+			var ver2=document.getElementById('verb2').value;
+			var ver3=document.getElementById('verb3').value;
+			var ver4=document.getElementById('verb4').value;
+			var car=document.getElementById('career').value;
+			var bdy=document.getElementById('body').value;
+			var fam1=document.getElementById('famnoun').value;
+			var fam2=document.getElementById('famnoun2').value;
+			var bst=document.getElementById('boast').value;
+			var son=document.getElementById('song').value;
+			var num1=document.getElementById('num').value;
+			var num2=document.getElementById('num2').value;
+			var num3=document.getElementById('num3').value;
+			var pla=document.getElementById('place').value;
+			var plu=document.getElementById('plunoun').value;
+			var pc=document.getElementById('pc').value;
+		
+		
+		document.getElementById('output').innerHTML= "The main place where people like to go during Christmas time would have to be a place of "+ad1+" and "+ad2+" with their "+ad3+" family. For me, I prefer to go a place near the"+nou1+" or the "+nou2+", oftentimes going alongside my family or staying home. The best thing about this holiday is being able to play "+gam+" or going out  "+ver1+" throughout the days until the break is over. More often than not, the father ends up joining the kids in "+ver2+" while the mother goes "+ver3+" with siblings or parents. Of course, as most holidays are, there are years with "+ad4+" family reunions. The sort of reunions where there’s the  "+fam1+" who’s constantly bothering you about your job in  "+car+", or the "+fam2+" who pesters about their  "+bst+". It’s always around this time that you’ll be hearing  "+son+" on the radio at least  "+num1+" times a day. The other winter, my older brother took us skiing, during which my younger brother ended up crashing into a "+nou3+", it was pretty "+ad5+" and he had to be brought to a "+nou4+" to fix his "+bdy+". Because of such, we all went to the  "+pla+", there I decided to work on  "+ver4+" while we waited for him to be better. It really feels that everyone needs this holiday, though parents do more than their young as they’ve been so  "+ad6+" working  "+num2+" hours every week so we can have a meal. The best part about the Christmas holiday must be that it always brings families  "+ad7+", and we can all be "+ad8+" about something that happens during that time. Whether that is celebrating somebody’s birthday with  "+plu+" or getting absolutely "+ad9+" for New Year’s. Then after New Year’s, its back to our  "+ad10+" lives, back in "+pc+" for a good "+num3+" of months."
+			;
+		}
+		 
+		
+		
+		
+		
+	
+	</script>
+</body>
+</html>
